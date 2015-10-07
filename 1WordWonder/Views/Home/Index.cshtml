@@ -1,0 +1,58 @@
+﻿
+
+<h2 class="text-center">1 Word Wonder: One Mood. One Song.</h2>
+<hr style="color:black; border-color:gray" />
+
+<div class="container">
+        <div class="form-group form-inline">
+            <label for="query">Word: </label>
+            <input id="query" placeholder="Try any word!!"  class="form-control" style="max-width: 250px">
+            <button id="submit" class="btn btn-success">Submit</button>
+            <button id="reset" class="btn btn-danger" style="display:none">Start Over</button>
+            <script type="text/javascript">
+                $(document).ready(function () {                 
+                    $('#query').keypress(function (key) {
+                        if ((key.charCode >= 65 && key.charCode <= 90) || (key.charCode >= 65 + 32 && key.charCode <= 90 + 32) || key.charCode === 0) {
+                            return true;
+                        }
+                        else { return false; }
+                    });
+                });
+            </script>
+        </div>
+       
+</div>
+
+
+<div class="container" style="margin-top: 20px;">
+    <div id="loading" class="text-center" style="padding-top:10px;display:none">
+        <img src="~/Content/css/images/spinner.gif" />
+    </div>
+    <div id="newEntry" style="display:none;">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center" id="dataStatement"></h4>
+            </div>
+        </div>
+        <div class="row" style="padding-top:10px;">
+            <div class="col-md-12">
+                <div id="slider" class="ui-slider-handle"></div>
+            </div>
+        </div>
+        <div class="row" style="padding-top:10px">
+            <div class="col-md-12 text-center">
+                <button id="submitNewWord" class="btn btn-default text-center">Go!</button>
+            </div>
+        </div>
+    </div>
+    <div id="song" class="text-center" style="padding-top:10px;">
+        <h5></h5>
+        <div id="youTubeVid">
+            <h4 class="text-center" id="videoTitle"></h4>
+            <object id="vid" style="width:100%;height:100%;width: 600px; height:338px; float: none; clear: both; margin: 2px auto;" data=""></object>
+        </div>
+    </div>       
+</div>
+
+
+

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="One Word Wonder is an application that takes the sentiment of words, collects the sentiment of words unknown to the use API's, takes the information and matches with a song of similar sentiment and plays it.">
+    <meta name="author" content="Pasquale Caiazzo, Allen Clemons, Robert Collier, and Stefano Di Bella">
+    <link rel="icon" href="~/Content/css/images/eighth-note.png">
+    <script src="~/Scripts/jquery-1.11.2.min.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
+    <link href="~/Content/css/jquery-ui.min.css" rel="stylesheet" />      
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/sticky-footer.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <title>1 Word Wonder</title>
+</head>
+
+<body>
+
+    <!-- Begin page content -->
+    <div class="container">
+        @RenderBody()        
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Powered by <a href="http://the.echonest.com/">The Echo Nest</a>, <a href="http://twinword.com/developer-api.php">Twinword</a>, and <a href="https://developers.google.com/youtube/">Youtube</a> API's. Created by Pasquale Caiazzo, Allen Clemons, Robert Collier, and Stefano Di Bella.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

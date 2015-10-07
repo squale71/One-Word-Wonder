@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Site";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>1 Word Wonder: One Mood. One Song</h1>
+</div>
+
+<div class="container">
+    <div style="padding-top: 100px; float: left;">
+        <!-- Div for word input. -->
+        <div id="wordDiv">
+            <label class="lead" for="wordbox">Type in a word:</label>
+            <input id="query" type="text">
+            <a id="submitBtn" class="btn btn-success">Submit</a>
+        </div>
+
+        <!-- Div for slider.  -->
+        <div id="inputDiv" class="pop-in">
+            <div style="margin: 5%">
+                <p>Unfortunately, we couldn't find anything on this word.</p>
+                <p>Could you tell us how you feel about this word?</p>
+                <p>How intense is this word?</p>
+                <div title="50" id="slider_container">
+                    <div class="slider"></div>
+                </div>
+                <a id="scoreconfirm" href="#" class="btn btn-success" style="margin-top:20px">Send Score</a>
+            </div>
+        </div>
+
+        <!-- div for the YouTube video -->
+        <div id="youtubeDiv" class="pop-in">
+            <div>
+                <div id="player"></div><!-- for the Youtube player from the Youtube API -->
+            </div>
+        </div>
+    </div>
+</div>

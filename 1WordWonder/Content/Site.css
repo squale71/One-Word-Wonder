@@ -1,0 +1,14 @@
+﻿
+/* Custom Styles
+-----------------------------------------------------------*/
+body {
+    background-color: #FCEDA7;
+    background-image: url('css/images/notes.png');
+    font-family: 'Abel', sans-serif;
+}
+
+
+.footer {
+    height: 80px;
+    background-color: lightgray;
+}

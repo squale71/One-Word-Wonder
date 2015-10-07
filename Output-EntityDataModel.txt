@@ -1,0 +1,17 @@
+﻿Generated model file: WordModel.edmx.
+Loading metadata from the database took 00:00:02.3222312.
+Generating the model took 00:00:14.3069358.
+Added the connection string to the Web.Config file.
+Writing the .edmx file took 00:00:00.0025128.
+Generated model file: WordModel.edmx.
+Loading metadata from the database took 00:00:00.6957908.
+Generating the model took 00:00:00.7956879.
+Generated model file: WordModel.edmx.
+Loading metadata from the database took 00:00:00.6455641.
+Generating the model took 00:00:01.0642355.
+Generated model file: WordModel.edmx.
+Loading metadata from the database took 00:00:00.8508464.
+Generating the model took 00:00:01.0044912.
+Generated model file: WordModel.edmx.
+Loading metadata from the database took 00:00:00.6034746.
+Generating the model took 00:00:00.7884769.
